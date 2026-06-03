@@ -1,14 +1,19 @@
+
+using CatHub.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
+var swaggerEnabled = builder.Configuration.GetValue<bool?>("Swagger:Enabled") ?? true;
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddPersistence(builder.Configuration);
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (swaggerEnabled)
 {
     app.UseSwagger();
     app.UseSwaggerUI();

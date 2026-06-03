@@ -3,6 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2BC61AEE-CABE-480B-ADE9-192D65C07F50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatHub.API", "src\CatHub.API\CatHub.API.csproj", "{98612DEB-694D-42D3-996C-CFB67FA6E353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatHub.Application", "src\CatHub.Application\CatHub.Application.csproj", "{5BAF0C2C-3D0E-4C51-86F5-BCC06914069C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatHub.Domain", "src\CatHub.Domain\CatHub.Domain.csproj", "{929D0B5B-44EC-46F0-910E-32122184E4DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatHub.Infrastructure", "src\CatHub.Infrastructure\CatHub.Infrastructure.csproj", "{84EC1954-461B-48F5-BA13-018A10E6A4B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatHub.Persistence", "src\CatHub.Persistence\CatHub.Persistence.csproj", "{451430E3-6C5A-47A8-9D46-A93D0627CA6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatHub.Shared", "src\CatHub.Shared\CatHub.Shared.csproj", "{7CC109D9-F801-45BE-9048-ED7C23290527}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +24,39 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98612DEB-694D-42D3-996C-CFB67FA6E353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98612DEB-694D-42D3-996C-CFB67FA6E353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98612DEB-694D-42D3-996C-CFB67FA6E353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98612DEB-694D-42D3-996C-CFB67FA6E353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BAF0C2C-3D0E-4C51-86F5-BCC06914069C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BAF0C2C-3D0E-4C51-86F5-BCC06914069C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BAF0C2C-3D0E-4C51-86F5-BCC06914069C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BAF0C2C-3D0E-4C51-86F5-BCC06914069C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{929D0B5B-44EC-46F0-910E-32122184E4DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{929D0B5B-44EC-46F0-910E-32122184E4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{929D0B5B-44EC-46F0-910E-32122184E4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{929D0B5B-44EC-46F0-910E-32122184E4DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84EC1954-461B-48F5-BA13-018A10E6A4B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84EC1954-461B-48F5-BA13-018A10E6A4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84EC1954-461B-48F5-BA13-018A10E6A4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84EC1954-461B-48F5-BA13-018A10E6A4B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{451430E3-6C5A-47A8-9D46-A93D0627CA6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{451430E3-6C5A-47A8-9D46-A93D0627CA6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{451430E3-6C5A-47A8-9D46-A93D0627CA6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451430E3-6C5A-47A8-9D46-A93D0627CA6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CC109D9-F801-45BE-9048-ED7C23290527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CC109D9-F801-45BE-9048-ED7C23290527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CC109D9-F801-45BE-9048-ED7C23290527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CC109D9-F801-45BE-9048-ED7C23290527}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98612DEB-694D-42D3-996C-CFB67FA6E353} = {2BC61AEE-CABE-480B-ADE9-192D65C07F50}
+		{5BAF0C2C-3D0E-4C51-86F5-BCC06914069C} = {2BC61AEE-CABE-480B-ADE9-192D65C07F50}
+		{929D0B5B-44EC-46F0-910E-32122184E4DF} = {2BC61AEE-CABE-480B-ADE9-192D65C07F50}
+		{84EC1954-461B-48F5-BA13-018A10E6A4B6} = {2BC61AEE-CABE-480B-ADE9-192D65C07F50}
+		{451430E3-6C5A-47A8-9D46-A93D0627CA6E} = {2BC61AEE-CABE-480B-ADE9-192D65C07F50}
+		{7CC109D9-F801-45BE-9048-ED7C23290527} = {2BC61AEE-CABE-480B-ADE9-192D65C07F50}
 	EndGlobalSection
 EndGlobal
